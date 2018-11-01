@@ -1,0 +1,16 @@
+body.admin-bar
+  margin-top: -32px !important
+  #wpadminbar
+    opacity: .7
+    width: 32px
+    height: 32px
+    overflow: hidden
+    min-width: 0
+    transition: width 0s 1s, opacity .3s
+    @media only screen and (max-width: 960px)
+      display: none
+    &:hover
+      opacity: 1
+      width: 100%
+      overflow: visible
+      transition: width 0s 0s, opacity .3s
