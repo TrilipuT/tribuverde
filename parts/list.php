@@ -1,5 +1,7 @@
 <?php while ( have_posts() ): the_post(); ?>
-    <a class="item" data-aos="fade-<?= $wp_query->current_post % 2 ? 'right' : 'left' ?>"
+    <a class="item"
+       data-aos="fade-<?= $wp_query->current_post % 2 ? 'right' : 'left' ?>"
+       data-aos-deplat="50"
        href="<?php the_permalink() ?>">
 		<?php the_post_thumbnail( $wp_query->current_post % 2 ? 'grid-2' : 'grid-1' ) ?>
         <div class="info">

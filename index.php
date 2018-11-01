@@ -3,13 +3,13 @@
         <div class="container">
 			<?php the_post(); ?>
             <article>
-                <h1 class="page-title"><?php the_title(); ?></h1>
+                <h1 class="page-title" data-aos="fade-in" data-aos-delay="300"><?php the_title(); ?></h1>
 				<?php if ( has_excerpt() ): ?>
-                    <div class="page-excerpt content">
+                    <div class="page-excerpt content" data-aos="fade-in" data-aos-delay="400">
 						<?php the_excerpt(); ?>
                     </div>
 				<?php endif; ?>
-                <div class="page-content content">
+                <div class="page-content content" data-aos="fade-in" data-aos-delay="500">
 					<?php the_content(); ?>
                 </div>
             </article>

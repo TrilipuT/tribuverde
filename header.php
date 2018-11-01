@@ -43,7 +43,7 @@
     </div>
     <div class="logo-animation">
         <span class="top-part" data-aos="fade-top"
-              data-aos-offset="300"
+              data-aos-delay="400"
               data-aos-easing="ease-in-sine">TRIBU</span>
         <span class="right-part">VERDE</span>
     </div>
