@@ -1,0 +1,13 @@
+@import 'abstracts/mixins'
+@import 'mixins/list'
+@import 'abstracts/variables'
+@import "parts/content"
+
+.editor-writing-flow
+  .editor-block-list__block,.editor-post-title__block
+    max-width: 1180px !important
+    @extend %content
+.edit-post-visual-editor
+  font-family: 'Montserrat', sans-serif
+  background: #000
+  color: #ffffff

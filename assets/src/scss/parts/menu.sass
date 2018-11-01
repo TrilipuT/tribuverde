@@ -1,0 +1,47 @@
+.menu
+  position: fixed
+  width: $menu-width
+  background: white
+  color: black
+  top: 0
+  left: 0
+  height: 100vh
+  .menu-content
+    display: flex
+    box-sizing: border-box
+    white-space: nowrap
+    position: absolute
+    height: $menu-width
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%) rotate(-90deg)
+    min-width: 100vh
+    padding: 0 65px
+    .menu-items-content
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      align-items: center
+      height: 100%
+      width: 100%
+      a
+        font-size: 20px
+        text-transform: uppercase
+        position: relative
+        &:before
+          content: ''
+          position: absolute
+          bottom: 0
+          width: 0
+          height: 2px
+          background: currentColor
+          transition: width ease-in-out .3s
+        &:hover:before
+          width: 100%
+      .current-menu-item a
+        font-weight: bold
+      .menu-item
+        margin: 0 5px
+        &:last-child
+          .divider
+            display: none

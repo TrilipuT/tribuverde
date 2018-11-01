@@ -1,0 +1,13 @@
+$default-grid-margin: 50px
+$default-grid-wrapper: 1230px
+$default-col-n: 3
+
+@function margin($el-margin: $default-grid-margin, $parent-size: $default-grid-wrapper)
+    @return ($el-margin/$parent-size)*100%
+
+@function width($el-size, $parent-size:  $default-grid-wrapper)
+    @return ($el-size/$parent-size)*100%
+
+@function grid_width( $col-n: $default-col-n, $grid-margin: $default-grid-margin, $parent-size: $default-grid-wrapper)
+    @return width(($parent-size - $grid-margin*($col-n - 1 ))/$col-n, $parent-size)
+

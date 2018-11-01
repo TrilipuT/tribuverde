@@ -1,0 +1,166 @@
+//.editor-writing-flow,
+//.content,
+//#content,
+%content
+  word-break: break-word
+  word-wrap: break-word
+  color: inherit
+  font-family: inherit
+  font-size: $default-font-size
+  line-height: $default-line-height
+  //+breakpoint-max(767)
+    font-size: $mobile-font-size
+    line-height: $mobile-line-height
+  //h1
+    @extend %h1
+  //h2
+    @extend %h2
+  //h3
+    @extend %h3
+  //h4
+    @extend %h4
+  //h5
+    @extend %h5
+  //h6
+    @extend %h6
+  iframe
+    max-width: 100%
+  .video
+    max-width: 100%
+    iframe
+      width: 100%
+  hr
+    display: block
+    max-width: none !important
+    height: 1px
+    border:
+      bottom: 1px solid currentColor
+      top: none
+      left: none
+      right: none
+    outline: none
+    margin: 60px 0 70px
+    padding: 20px 0 0 0
+    //opacity: .2
+    clear: both
+    +breakpoint-max(767)
+      margin: 20px 0
+  p
+    margin-bottom: $default-margin
+    +breakpoint-max(767)
+      margin-bottom: $default-margin / 2
+
+  a
+    color: $cyan
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+  .excerpt
+    font-size: 22px
+    line-height: 32px
+
+    font-weight: 500
+    +breakpoint-max(767)
+      font-size: 14px
+      line-height: 24px
+  ul
+    padding: 0
+    margin: 0 0 $default-margin 0
+    li
+      position: relative
+      padding-left: 20px
+      &:before
+        content: ''
+        display: block
+        width: 6px
+        height: 6px
+        border-radius: 50%
+        background-color: currentColor
+        opacity: 0.5
+        position: absolute
+        left: 0
+        top: 10px
+  ol
+    padding: 0
+    margin: 0
+    margin-bottom: $default-margin
+    list-style-type: none
+    li
+      position: relative
+      padding-left: 20px
+      counter-increment: step-counter
+      &:before
+        content: counter(step-counter) '.'
+        display: block
+        color: currentColor
+        opacity: 0.7
+        position: absolute
+        left: 0
+  i,
+  em
+    font-style: italic
+  strong,
+  b
+    font-weight: bold
+  sup, sub
+    font-size: 75%
+    line-height: 0
+    position: relative
+    vertical-align: baseline
+  sup
+    top: -0.5em
+  sub
+    bottom: -0.25em
+
+  table
+    width: 100%
+    margin-bottom: $default-margin
+  th
+    font-weight: 700
+  td, th
+    padding: 5px 10px
+    border: 1px solid #c4c4c4
+
+  img
+    max-width: 100%
+    height: auto
+  dl
+    display: flex
+  dt
+    font-weight: 700
+  dd
+    margin-left: 20px
+  pre
+    white-space: normal
+
+  .alignnone
+    margin: $default-line-height 0
+
+  .aligncenter
+    display: block
+    clear: both
+
+  .alignright
+    float: right
+    clear: right
+    margin:
+      left: 80 / 1280 * 100% !important
+      bottom: 35 / 1280 * 100%
+    +breakpoint-max(767)
+      float: none
+      margin: 10px 0 !important
+
+  .alignleft
+    float: left
+    clear: left
+    margin:
+      right: 80 / 1280 * 100% !important
+      bottom: 35 / 1280 * 100%
+    +breakpoint-max(767)
+      float: none
+      margin: 20px 0 !important
+
+  img.alignnone
+    display: inline-block
+    vertical-align: middle

@@ -1,0 +1,32 @@
+//PATH
+$path: '/wp-content/themes/datarobot3';
+
+//FONT
+$font-stack: 'Roboto', 'Noto', sans-serif;
+$main-font: 'Roboto', sans-serif;
+$pre-font: 'Roboto Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+
+//LINE HEIGHT
+$lh: 1;
+$lh1: 1.5;
+$lh2: 2;
+
+//FONT WEIGHT
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+$menu-width: 80px;
+
+$logo-font-size: (190 / 1000) * 100vw;
+$logo-line-height: 165/240 * $logo-font-size;
+
+//COLOR
+$text-color: white;
+$cyan: #5BB49D;
+
+$default-font-size: 25px;
+$default-line-height: 1.2em;
+$default-margin: 1em;

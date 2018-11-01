@@ -1,0 +1,66 @@
+.posts-listing
+  .categories
+    float: left
+    li
+      font-size: 25px
+      margin-bottom: 1em
+      a
+        text-decoration: inherit
+      &.current, &:hover
+        text-decoration: underline
+  .list
+    .item
+      margin-bottom: 20px
+      position: relative
+      transition: all .3s ease-in-out
+      display: block
+      +min(1024)
+        margin-bottom: -10%
+      img
+        filter: grayscale(100%)
+        width: 100%
+        transition: inherit
+        display: block
+
+      &:after
+        transition: inherit
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: #757848
+        opacity: 0
+        z-index: 2
+      +min(1024)
+        &:nth-child(4n+1)
+          margin-left: percentage(670/1170)
+          max-width: percentage(430/1170)
+        &:nth-child(4n+2)
+          max-width: 100%
+        &:nth-child(4n+3)
+          margin-left: percentage(170/1170)
+          max-width: percentage(670/1170)
+        &:nth-child(4n+4)
+          margin-left: percentage(70/1170)
+          max-width: percentage(1100/1170)
+      &:last-child
+        margin-bottom: 0
+      &:hover
+        z-index: 4
+        &:after
+          opacity: .6
+
+      .info
+        position: absolute
+        top: 30/1920 * 100vw
+        left: 30/1920 * 100vw
+        width: calc(100% - 60px)
+        z-index: 3
+        h2
+          font-size: 43/1920 * 100vw
+          margin-bottom: .3em
+          font-weight: bold
+        p
+          font-size: 30/1920 * 100vw

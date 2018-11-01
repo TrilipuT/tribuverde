@@ -1,0 +1,31 @@
+@import 'abstracts/mixins'
+@import 'mixins/list'
+@import 'abstracts/variables'
+@import "parts/reset"
+
+@import "parts/menu"
+@import "parts/logo-animation"
+@import "parts/forest"
+@import "parts/content"
+@import "layouts/page"
+@import "layouts/home"
+@import "layouts/posts-listing"
+
+@import "../../../node_modules/aos/src/sass/aos"
+
+body
+  font-family: 'Montserrat', sans-serif
+  //font-size: 20/1920 * 100vw
+  background: #000
+  color: #ffffff
+  &:not(.home)
+    padding-left: $menu-width
+
+.container
+  padding: (400/1000 * 100vh) (375/1920 * 100vw) 40px (270/1920 * 100vw)
+  //max-width: 1180px
+  margin: 0 auto
+
+.background
+  position: relative
+  z-index: -1

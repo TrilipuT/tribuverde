@@ -1,0 +1,37 @@
+=menu-icon($width: 30px, $height: 30px, $line-thickness: 2px, $color: #000)
+    position: relative
+    cursor: pointer
+    height: $height
+    width: $width
+    box-sizing: border-box
+    span
+        position: absolute
+        top: 50%
+        margin-top: - $line-thickness / 2
+        &:before,
+        &:after,
+        &
+            content: ''
+            display: block
+            height: $line-thickness
+            background: $color
+            width: $width
+            transition: .3s ease
+        &:before
+            transform: rotate(0deg) 
+            position: absolute
+            top: - (($height / 2) - 1)
+        &:after
+            transform: rotate(0deg)
+            position: absolute
+            top: ($height / 2) - 1
+
+=menu-icon-cross
+    span
+        height: 0
+        &:before
+            transform: rotate(45deg)
+            top: -1px
+        &:after
+            transform: rotate(-45deg)
+            top: -1px

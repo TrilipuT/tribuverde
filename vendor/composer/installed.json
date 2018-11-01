@@ -1,0 +1,89 @@
+[
+    {
+        "name": "redink-no/wpkit",
+        "version": "dev-develop",
+        "version_normalized": "dev-develop",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/redink-no/wpkit.git",
+            "reference": "047432b9ecf6f646f6244e11ccbe01d91ddcc5d3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/redink-no/wpkit/zipball/047432b9ecf6f646f6244e11ccbe01d91ddcc5d3",
+            "reference": "047432b9ecf6f646f6244e11ccbe01d91ddcc5d3",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2017-09-11T13:26:07+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "WPKit\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Oleksandr Strikha",
+                "email": "alex@pingbull.no"
+            },
+            {
+                "name": "Vitaly Nikolaev",
+                "email": "vitaly@pingbull.no"
+            },
+            {
+                "name": "Viktor Kuliebiakin",
+                "email": "victor@pingbull.no"
+            }
+        ],
+        "description": "Object-oriented development framework for WordPress",
+        "keywords": [
+            "wordpress",
+            "wpkit"
+        ]
+    },
+    {
+        "name": "shtrihstr/simple-rest-api",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/shtrihstr/simple-rest-api.git",
+            "reference": "d73b313b01af10ad8c280c5a834950d4adc29413"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/shtrihstr/simple-rest-api/zipball/d73b313b01af10ad8c280c5a834950d4adc29413",
+            "reference": "d73b313b01af10ad8c280c5a834950d4adc29413",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5 || ^7.0"
+        },
+        "time": "2016-09-22T10:41:40+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Simple_REST_API\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Simple WordPress REST API Router",
+        "keywords": [
+            "api",
+            "rest",
+            "wordpress"
+        ]
+    }
+]

@@ -1,0 +1,68 @@
+=plashkaSize($width,$height, $left)
+  width: $width/1920 * 100vw
+  height: $height/1920 * 100vw
+  left: $left/1920 * 100vw
+
+=listPosition($top,$left)
+  top: $top/1920 * 100vw
+  left: $left/1920 * 100vw
+
+.home
+  height: 100vh
+  .navigation
+    height: 100vh
+    position: relative
+  #front-page
+    width: 100%
+    height: auto
+    bottom: 0
+    position: absolute
+  .plashka
+    position: absolute
+    bottom: 0
+    width: 100%
+    &:hover
+      cursor: pointer
+      a
+        text-decoration: underline
+    a
+      position: absolute
+      color: black
+      font-size: 34/1920 * 100vw
+    &:before
+      background-repeat: no-repeat
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+
+  .whoweare
+    +plashkaSize(784, 802, 50)
+    &:before
+      background-image: url('../images/home_about.svg')
+      //background-size: 784/1920 * 100vw
+    a
+      +listPosition(195, 125)
+  .proekty
+    +plashkaSize(1300, 656, 309)
+    a
+      +listPosition(155, 420)
+    &:before
+      background-image: url('../images/home_proekty.svg')
+      //background-size: 1300/1920 * 100vw
+  .films
+    +plashkaSize(1380, 738, 455)
+    clip-path: url('../images/home_films.svg#mask')
+    a
+      +listPosition(220, 1090)
+      color: white
+    &:before
+      background-image: url('../images/home_films.svg')
+      //background-size: 1380/1920 * 100vw
+  .shop
+    +plashkaSize(486, 416, 775)
+    a
+      +listPosition(90, 224)
+    &:before
+      background-image: url('../images/home_shop.svg')
+      //background-size: 1380/1920 * 100vw

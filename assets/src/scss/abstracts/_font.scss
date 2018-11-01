@@ -1,0 +1,13 @@
+@mixin font($name, $nameInFolder) {
+
+  $file_path: '../fonts/' + $nameInFolder;
+  $weight: 'regular';
+  $style: normal;
+
+  @font-face {
+    font-family: $name;
+    src: url("#{$file_path}.eot");
+    src: url("#{$file_path}.eot?#iefix") format('embedded-opentype'), url("#{$file_path}.woff") format('woff'), url("#{$file_path}.ttf") format('truetype'), url("#{$file_path}.svg") format('svg');
+  }
+
+}

@@ -1,0 +1,12 @@
+=bodyclass($classes...)
+    $length: length($classes)
+    @if $length > 1
+        $selector: 'body.#{nth($classes, 1)} &'
+        @for $i from 2 through $length
+            $selector: $selector + ', body.#{nth($classes, $i)} &'
+        #{$selector}
+            @content
+        
+    @else
+        body.#{nth($classes, 1)} &
+            @content
