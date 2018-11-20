@@ -9,6 +9,9 @@
   .top-part
     position: absolute
     right: 0
+    transform-origin: 0 0
+    &.to-left
+      transform: rotate(-90deg) translate(-100%, calc(-50vw + 100%)) !important
   .right-part
     position: absolute
     transform: rotate(90deg)

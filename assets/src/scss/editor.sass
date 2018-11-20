@@ -4,10 +4,18 @@
 @import "parts/content"
 
 .editor-writing-flow
-  .editor-block-list__block,.editor-post-title__block
+  .editor-block-list__block, .editor-post-title__block
     max-width: 1180px !important
     @extend %content
+
 .edit-post-visual-editor
   font-family: 'Montserrat', sans-serif
   background: #000
   color: #ffffff
+
+.editor-block-mover__control,
+.editor-block-mover__control-drag-handle,
+.editor-block-mover__control-drag-handle:not(:disabled):not([aria-disabled=true]):not(.is-default):active,
+.editor-block-mover__control-drag-handle:not(:disabled):not([aria-disabled=true]):not(.is-default):focus,
+.editor-block-mover__control-drag-handle:not(:disabled):not([aria-disabled=true]):not(.is-default):hover
+  color: white
