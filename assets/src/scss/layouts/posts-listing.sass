@@ -14,7 +14,7 @@
       position: relative
       transition: all .3s ease-in-out
       display: block
-      +min(1024)
+      +breakpoint-min(1024)
         margin-bottom: -10%
       img
         filter: grayscale(100%)
@@ -33,7 +33,7 @@
         background-color: #757848
         opacity: 0
         z-index: 2
-      +min(1024)
+      +breakpoint-min(1024)
         &:nth-child(4n+1)
           margin-left: percentage(670/1170)
           max-width: percentage(430/1170)
