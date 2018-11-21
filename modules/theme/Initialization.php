@@ -198,8 +198,12 @@ class Initialization extends AbstractThemeInitialization {
 	}
 
 	public function add_action_enqueue_block_editor_assets() {
-		wp_enqueue_style( 'tabor-gutenberg', $this->get_theme_assets_url() . "/built/stylesheets/editor.css", false, '@@pkg.version', 'all' );
-		wp_enqueue_script('gb-script',
+		wp_enqueue_style(
+			'tribu-fonts',
+			'https://fonts.googleapis.com/css?family=Montserrat:400,700,900&amp;subset=cyrillic'
+		);
+		wp_enqueue_style( 'tribu-gutenberg', $this->get_theme_assets_url() . "/built/stylesheets/editor.css", false, '@@pkg.version', 'all' );
+		wp_enqueue_script('tribu-gutenberg-script',
 						  get_stylesheet_directory_uri() . '/assets/src/javascripts/guttenberg_blocks.js',
 						  array( 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-api'  )
 						 );
