@@ -10,10 +10,17 @@
     position: absolute
     right: 0
     transform-origin: 0 0
+    .home &
+      left: -100vw
     &.to-left
+      left: 0
       transform: rotate(-90deg) translate(-100%, calc(-50vw + 100%)) !important
+      //.home &
+        transform: rotate(-90deg) translate(-62%, 0%) !important
   .right-part
     position: absolute
     transform: rotate(90deg)
     transform-origin: 0 0
     top: 165/240 * 1em
+    .home &
+      top: 0
