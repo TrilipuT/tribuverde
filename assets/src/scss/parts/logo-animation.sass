@@ -1,26 +1,28 @@
-.logo-animation
+.background .logo-animation
   position: fixed
   top: 0
+  left: 0
   right: 0
+  bottom: 0
   color: white
   font-size: $logo-font-size
   line-height: $logo-line-height
   font-weight: 900
-  .top-part
+  [data-aos].top-part
     position: absolute
-    right: 0
+    transform: translate3d(calc(100vw - 100%), 0, 0)
     transform-origin: 0 0
-    .home &
-      left: -100vw
     &.to-left
-      left: 0
-      transform: rotate(-90deg) translate(-100%, calc(-50vw + 100%)) !important
-      //.home &
-        transform: rotate(-90deg) translate(-62%, 0%) !important
-  .right-part
-    position: absolute
-    transform: rotate(90deg)
-    transform-origin: 0 0
-    top: 165/240 * 1em
+      transform: rotate(-90deg) translate3d(-100%, 80px, 0)
     .home &
-      top: 0
+      transform: translate3d(0, 0, 0)
+  //.home &
+    transform: rotate(-90deg) translate(-62%, 0%) !important
+  [data-aos].right-part
+    position: absolute
+    transform: rotate(90deg) translate3d(165/240 * 1em, -100vw, 0)
+    transform-origin: 0 0
+    &.to-left
+      transform: rotate(90deg) translate3d(0, -100vw, 0)
+    .home &
+      transform: rotate(90deg) translate3d(0, -100vw, 0)

@@ -12,9 +12,9 @@ $(function ($) {
     once: true,
   })
 
-  let $topPart = $('.logo-animation .top-part')
+  let $topPart = $('.logo-animation .top-part, .logo-animation .right-part')
 
-  window.onscroll = function () {
+  function adjustLogo () {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop
     if (scrolled > 10) {
       $topPart.addClass('to-left')
@@ -22,6 +22,10 @@ $(function ($) {
       $topPart.removeClass('to-left')
     }
   }
+
+  window.onscroll = adjustLogo
+  adjustLogo()
+
   if ($('body').hasClass('home')) {
     setInterval(function () {
       //$topPart.toggleClass('to-left')
