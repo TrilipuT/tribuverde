@@ -17,8 +17,9 @@
 body
   font-family: 'Montserrat', sans-serif
   //font-size: 20/1920 * 100vw
-  background: #000
+  background-color: #000
   color: #ffffff
+  overflow-x: hidden
   &:not(.home)
     padding-left: $menu-width
 
@@ -27,6 +28,10 @@ body
   //max-width: 1180px
   margin: 0 auto
 
-.background
-  position: relative
-  z-index: -1
+//.background
+  pointer-events: none
+  overflow: hidden
+  left: 0
+  width: 100%
+  position: absolute
+  height: 100vh

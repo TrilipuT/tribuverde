@@ -31,30 +31,6 @@
     </aside>
 <?php endif; ?>
 <div class="background">
-    <div class="forest">
-<!--        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">-->
-<!--            <defs>-->
-<!--                <clipPath id="mask">-->
-<!--                    <path d="M62.27 336.44c44.6 33.56 113.71 20.67 156.79-13.96 22.14-17.91 28.3-44.73 29.26-71.98.9-17.63-3.03-31.28-12.97-46.16-7.55-10.86-13.51-20.11-15.84-33.75-3.1-19.26 1.81-37.67 11.92-54.04 7.28-11.98 14.96-23.56 16.25-38.39 5.91-52.87-69.17-101.38-111.86-64.75-22.95 19.51-41.14 47.06-44.51 76.7-2.94 23.63-10.62 35.21-29.13 48.73-19.31 13.52-39.41 23.83-51.16 45.8-10.93 19.58-29.76 90.81 51.26 151.78z"/>-->
-<!--                </clipPath>-->
-<!--            </defs>-->
-<!--            <g clip-path="url(#mask)">-->
-<!--                <image xmlns:xlink="http://www.w3.org/1999/xlink"-->
-<!--                       xlink:href="--><?//= get_template_directory_uri() ?><!--/assets/built/images/forest.jpg" width="1120px"-->
-<!--                       height="840px"></image>-->
-<!--            </g>-->
-<!--        </svg>-->
-
-
-        <!--         <img src="--><? //= get_template_directory_uri() ?><!--/assets/built/images/forest.jpg" alt="">-->
-        <!--        <svg xmlns="http://www.w3.org/2000/svg" viewBox="600 550 0 0" width="600" height="300">-->
-        <!--            <defs>-->
-        <!--                <clipPath id="forest-mask">-->
-        <!--                    <path d="M62.27 336.44c44.6 33.56 113.71 20.67 156.79-13.96 22.14-17.91 28.3-44.73 29.26-71.98.9-17.63-3.03-31.28-12.97-46.16-7.55-10.86-13.51-20.11-15.84-33.75-3.1-19.26 1.81-37.67 11.92-54.04 7.28-11.98 14.96-23.56 16.25-38.39 5.91-52.87-69.17-101.38-111.86-64.75-22.95 19.51-41.14 47.06-44.51 76.7-2.94 23.63-10.62 35.21-29.13 48.73-19.31 13.52-39.41 23.83-51.16 45.8-10.93 19.58-29.76 90.81 51.26 151.78z"/>-->
-        <!--                </clipPath>-->
-        <!--            </defs>-->
-        <!--        </svg>-->
-    </div>
     <div class="logo-animation">
         <span class="top-part" data-aos="fade-top"
               data-aos-delay="400"
@@ -63,5 +39,17 @@
               data-aos-delay="400"
               data-aos-easing="ease-in-sine">VERDE</span>
     </div>
-
 </div>
+<svg id="forest" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-aos="fade-in">
+    <defs>
+        <clipPath id="mask">
+            <path class="st0" id="mask-source"
+                  d="M29.3,161.2c22.5,14.6,54.6,9.9,75.3-6.7c10.6-8.6,14.8-20.3,15.3-33.4c0.4-8.5-2.7-16.2-7.4-23.3c-3.6-5.2-6.5-9.7-7.6-16.2c-1.5-9.2,0.9-18.1,5.7-25.9c3.5-5.8,7.2-11.3,7.8-18.4c2.8-25.4-33.2-48.7-53.7-31.1c-11,9.4-19.7,22.6-21.4,36.8c-1.4,11.3-5.1,16.9-14,23.4c-9.3,6.5-18.9,11.4-24.6,22C-0.6,97.7-9.2,136.1,29.3,161.2z"></path>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#mask)">
+        <image xmlns:xlink="http://www.w3.org/1999/xlink"
+               xlink:href="<?= get_template_directory_uri() ?>/assets/built/images/forest.jpg"
+               width="1120px" height="840px"></image>
+    </g>
+</svg>

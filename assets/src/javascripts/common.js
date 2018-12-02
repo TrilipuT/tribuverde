@@ -2,10 +2,6 @@ import $ from 'jquery'
 import AOS from 'aos'
 import SVG from 'svg.js'
 
-function getRand (min, max) {
-  return Math.random() * (max - min) + min
-}
-
 $(function ($) {
   AOS.init({
     easing: 'ease-in-out',
@@ -39,7 +35,7 @@ $(function ($) {
       loop(1000, true)
   }
 
-  function homeAnimation (element) {
+  function circleAnimation (element) {
     let r = Math.random()
     element.animate(4000).
       dmove(15 * r, 15 * r).
@@ -50,9 +46,12 @@ $(function ($) {
       animate(4000).
       dmove(5 * r, -5 * r).
       after(function () {
-        homeAnimation(element)
+        circleAnimation(element)
       })
   }
+
+  var mask = SVG.get('#forest')
+  circleAnimation(mask.select('#mask-source'))
 
   if ($('#front-page').length) {
     var front = SVG.get('#front-page'),
@@ -63,10 +62,10 @@ $(function ($) {
       arrows = front.select('#Arrows')
 
     arrowsAnimation()
-    homeAnimation(about)
-    homeAnimation(films)
-    homeAnimation(projects)
-    homeAnimation(shop)
+    circleAnimation(about)
+    circleAnimation(films)
+    circleAnimation(projects)
+    circleAnimation(shop)
 
     about.mouseover(function () { this.pause() })
     shop.mouseover(function () { this.pause() })

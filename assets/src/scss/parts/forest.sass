@@ -1,5 +1,25 @@
-.forest
+#forest
   position: absolute
-  //display: none
-  img
-    clip-path: url('#forest-mask')
+  width: calc(100vw - 80px)
+  height: 100vh
+  left: 0
+  transform: translate3d(20%, -200px, 0)
+  transform-origin: center center
+  pointer-events: none
+  z-index: -1
+  .post-type-archive-film &
+    transform: translate3d(-300px, -200px, 0)
+  .home &
+    transform: translate3d(40%, -200px, 0)
+    z-index: 2
+
+//  transform: translate3d(40%, -200px, 0)
+//image
+  width: 100%
+  height: auto
+//transform: translate3d(0, -50%, 0)
+
+#mask-source
+  transform: scale(8) translate3d(00px, -100px, 0)
+  .post-type-archive-film &
+    transform: scale(7) translate3d(00px, -100px, 0)
