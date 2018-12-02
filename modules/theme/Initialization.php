@@ -170,7 +170,7 @@ class Initialization extends AbstractThemeInitialization {
 		);
 		wp_enqueue_style(
 			'theme',
-			$this->get_theme_assets_url() . "/built/stylesheets/screen.min.css", [ 'fonts' ],
+			$this->get_theme_assets_url() . "/built/stylesheets/screen.css", [ 'fonts' ],
 			filemtime( get_template_directory() . "/assets/built/stylesheets/screen.min.css" )
 		);
 
@@ -179,7 +179,7 @@ class Initialization extends AbstractThemeInitialization {
 	protected function _enqueue_scripts() {
 		wp_register_script(
 			'theme',
-			$this->get_theme_assets_url() . '/built/javascripts/common.min.js',
+			$this->get_theme_assets_url() . '/built/javascripts/common.js',
 			[ 'jquery' ],
 			filemtime( get_template_directory() . "/assets/built/javascripts/common.min.js" ),
 			true

@@ -29,10 +29,25 @@ $(function ($) {
   }
 
   // Animations
-  function arrowsAnimation () {
-    arrows.animate(3000).
-      dmove(80, 0).
-      loop(1000, true)
+  function arrowsAnimation (front) {
+    front.select('#arrow-0').
+      animate(1000).
+      scale(10, 10).
+      scale(1, 1)
+    front.select('#arrow-1').
+      delay(500).
+      animate(1000).
+      scale(8, 8).
+      scale(1, 1)
+    front.select('#arrow-2').
+      delay(1000).
+      animate(1000).
+      scale(10, 10).
+      scale(1, 1).
+      delay(2000).
+      after(function () {
+        arrowsAnimation(front)
+      })
   }
 
   function circleAnimation (element) {
@@ -58,10 +73,9 @@ $(function ($) {
       projects = front.select('#home-projects'),
       shop = front.select('#home-shop'),
       about = front.select('#home-about'),
-      films = front.select('#home-films'),
-      arrows = front.select('#Arrows')
+      films = front.select('#home-films')
 
-    arrowsAnimation()
+    arrowsAnimation(front)
     circleAnimation(about)
     circleAnimation(films)
     circleAnimation(projects)

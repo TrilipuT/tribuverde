@@ -318,7 +318,8 @@
         </a>
     </g>
     <g id="Arrows" fill="#FFF" transform="translate(57 943)">
-        <path id="Path"
-              d="M68.34 40.2L34.32 20.1 0 0v80.1L34.32 60zM206.2 40.2l-13.32-8.1-13.6-7.8v31.5l13.6-7.8zM364.76 40.2l-13.61-8.1-13.31-7.8v31.5l13.31-7.8z"/>
+        <path id="arrow-0" fill-rule="evenodd" d="M26.92 15.9L13.6 7.8 0 0v31.5l13.6-7.8 13.32-7.8z"/>
+        <path id="arrow-1" fill-rule="evenodd" d="M186.2 16.2l-13.32-8.1-13.6-7.8v31.5l13.6-7.8 13.32-7.8z"/>
+        <path id="arrow-2" fill-rule="evenodd" d="M344.76 16.2l-13.61-8.1L317.84.3v31.5l13.31-7.8 13.61-7.8z"/>
     </g>
 </svg>
