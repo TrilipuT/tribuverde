@@ -21,6 +21,9 @@
         width: 100%
         transition: inherit
         display: block
+        .post-type-archive-film &
+          &:hover
+            filter: grayscale(0)
 
       &:after
         transition: inherit
@@ -33,6 +36,8 @@
         background-color: #757848
         opacity: 0
         z-index: 2
+        .post-type-archive-film &
+          display: none
       +breakpoint-min(1024)
         &:nth-child(4n+1)
           margin-left: percentage(670/1170)

@@ -73,7 +73,8 @@ $(function ($) {
       projects = front.select('#home-projects'),
       shop = front.select('#home-shop'),
       about = front.select('#home-about'),
-      films = front.select('#home-films')
+      films = front.select('#home-films'),
+      links = front.select('.zoom')
 
     arrowsAnimation(front)
     circleAnimation(about)
@@ -81,6 +82,8 @@ $(function ($) {
     circleAnimation(projects)
     circleAnimation(shop)
 
+    links.mouseover(function () { this.animate(150).scale(1.3, 1.3) }).
+      mouseout(function () {this.animate(150).scale(1, 1)})
     about.mouseover(function () { this.pause() })
     shop.mouseover(function () { this.pause() })
     films.mouseover(function () { this.pause() })
