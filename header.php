@@ -50,6 +50,6 @@
     <g clip-path="url(#mask)">
         <image xmlns:xlink="http://www.w3.org/1999/xlink"
                xlink:href="<?= get_template_directory_uri() ?>/assets/built/images/forest.jpg"
-               width="1120px" height="840px"></image>
+               width="847" height="635"></image>
     </g>
 </svg>
