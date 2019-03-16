@@ -1,11 +1,21 @@
 .page-title
   font-size: 110/1920 * 100vw
-  line-height: 110px
+  line-height: 1.2em
+  min-height: 110px
   font-weight: bold
   position: relative
   padding-left: 85px
-  //word-break: break-all
   margin-bottom: 75px
+  display: flex
+  align-items: center
+  +breakpoint-max(767)
+    min-height: 80px + 17px
+    margin-bottom: 25px
+  +breakpoint-max(600)
+    padding-left: 30px
+    line-height: 1em
+    min-height: 50px + 17px
+
   &:before
     content: ''
     position: absolute
@@ -14,6 +24,10 @@
     left: 0
     top: 17px
     background-image: url('../images/title-icon.svg')
+    +breakpoint-max(600)
+      width: 5/8 * 30px
+      height: 30px
+      background-size: 5/8 * 30px
 
 .page-excerpt
   padding-left: percentage(350/1140)
@@ -22,6 +36,9 @@
 
 .page-content
   padding-left: 85px
+  +breakpoint-max(1024)
+    padding-left: 0
+
   &.content
     @extend %content
 
@@ -32,8 +49,12 @@ body
   background-position: 60% calc(40vh - 250px);
   background-size: 450px;
   background-image: url("./../images/plashka_film_rozdil.svg")
+  +breakpoint-max(600)
+    background-image: none
 
 .post-type-archive-project
   background-position: -75vw -75vw
   background-size: 140vw
   background-image: url("./../images/plashka_proekty.svg")
+  +breakpoint-max(600)
+    background-image: none

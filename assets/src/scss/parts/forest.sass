@@ -7,11 +7,19 @@
   transform-origin: center center
   pointer-events: none
   z-index: -1
+  +breakpoint-max(767)
+    display: none
+
+
   .post-type-archive-film &, .tax-film_category &
     transform: translate3d(-300px, -200px, 0)
+
   .home &
     transform: translate3d(40%, -200px, 0)
     z-index: 2
+    +breakpoint-max(600)
+      display: block
+      transform: translate3d(0, 150px, 0) rotate(90deg) !important
 
 //  transform: translate3d(40%, -200px, 0)
 //image
@@ -21,5 +29,6 @@
 
 #mask-source
   transform: scale(6) translate3d(00px, -100px, 0)
+
   .post-type-archive-film &, .tax-film_category &
     transform: scale(5) translate3d(00px, -100px, 0)

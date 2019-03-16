@@ -20,13 +20,24 @@ body
   background-color: #000
   color: #ffffff
   overflow-x: hidden
-  &:not(.home)
-    padding-left: $menu-width
+  +breakpoint-min(600)
+    &:not(.home)
+      padding-left: $menu-width
+  +breakpoint-max(600)
+    &.home
+      overflow: hidden
+
 
 .container
   padding: (400/1000 * 100vh) (375/1920 * 100vw) 40px (270/1920 * 100vw)
   //max-width: 1180px
   margin: 0 auto
+  +breakpoint-max(1024)
+    padding-right: 270/1920 * 100vw
+  +breakpoint-max(767)
+    padding: 100/1920 * 100vw 50/1920 * 100vw
+  +breakpoint-max(600)
+    padding: 200/1920 * 100vw 100/1920 * 100vw
 
 //.background
   pointer-events: none

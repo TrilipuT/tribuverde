@@ -1,8 +1,58 @@
 .home
   height: 100vh
+
   .navigation
     height: 100vh
     position: relative
+    +breakpoint-max(600)
+      display: none
+
+  .navigation-mobile
+    +breakpoint-min(600)
+      display: none
+
+    .menu-items-content
+      display: flex
+      flex-direction: column
+      margin: 50px 0 0 50px
+      height: calc(100vh - 100px)
+      width: calc(100vw - 100px)
+      z-index: 3
+      position: relative
+      > li
+        display: flex
+        flex: 1 1
+        width: 100%
+        margin: 0
+        &:nth-child(1) a
+          justify-content: flex-start
+        &:nth-child(3) a
+          justify-content: flex-end
+        &:nth-child(7) a
+          justify-content: flex-start
+        a
+          display: flex
+          height: 100%
+          align-items: center
+          justify-content: center
+          flex: 1 1
+          width: 100%
+          color: white
+          font-size: 180/1920 * 100vw
+
+      .about
+        justify-content: flex-start
+
+      .projects
+        justify-content: flex-end
+
+      .shop
+      //justify-content: flex-start
+
+      .films
+        justify-content: flex-start
+
+
   #front-page
     width: 100%
     height: auto
@@ -11,6 +61,7 @@
 
   #contacts-link
     opacity: 0
+
   #Contact-us:hover
     #contacts-link
       opacity: 1

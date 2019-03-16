@@ -1,9 +1,13 @@
 .posts-listing
   .categories
     float: left
+    +breakpoint-max(1024)
+      float: none
     li
       font-size: 25px
       margin-bottom: 1em
+      +breakpoint-max(600)
+        font-size: 15px
       a
         text-decoration: inherit
       &.current, &:hover
@@ -65,9 +69,12 @@
         left: 30/1920 * 100vw
         width: calc(100% - 60px)
         z-index: 3
+
         h2
           font-size: 43/1920 * 100vw
           margin-bottom: .3em
           font-weight: bold
+          +breakpoint-max(600)
+            font-size: 120/1920 * 100vw
         p
           font-size: 30/1920 * 100vw

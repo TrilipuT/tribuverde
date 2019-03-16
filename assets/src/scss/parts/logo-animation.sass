@@ -9,12 +9,16 @@
   line-height: $logo-line-height
   font-weight: 900
   z-index: -2
+  +breakpoint-max(767)
+    opacity: .5
   [data-aos].top-part
     position: absolute
     transform: translate3d(calc(100vw - 100%), 0, 0)
     transform-origin: 0 0
     &.to-left
       transform: rotate(-90deg) translate3d(-100%, 80px, 0)
+      +breakpoint-max(600)
+        transform: rotate(-90deg) translate3d(-100%, 0, 0)
     .home &
       transform: translate3d(0, 0, 0)
   //.home &
